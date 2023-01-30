@@ -1,0 +1,102 @@
+:root{
+    --cor-primaria:#3c8067;
+    --cor-secundaria:#f2ebe3;
+
+    --cor-suporte-primaria:#6c7289;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container .card{
+    background-color:white;
+    width: 45vw;
+    height: 70vh;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 100px;
+    
+    
+
+}
+
+.card .produto-imagem{
+    background-size: cover;
+    
+    
+}
+
+.card .informacoes{
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.informacoes #marca{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: var(--cor-suporte-primaria);
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+}
+
+.informacoes #titulo-produto{
+    font-size: 40px;
+    font-family: "Fraunces";
+    margin:10px 0;
+}
+
+.informacoes p{
+    font-size: 14px;
+    color: var(--cor-suporte-primaria);
+    font-family: "Montserrat";
+    margin-top: 15px
+}
+
+.informacoes .valor{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.valor #valor-promocao{
+    color: var(--cor-primaria);
+    font-family: "Fraunces";
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.valor #valor-original{
+    font-family: "Montserrat";
+    color: var(--cor-suporte-primaria);
+
+}
+
+.botao-add{
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 60px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-add:hover{
+    transform: scale(1.1);
+    
+}
